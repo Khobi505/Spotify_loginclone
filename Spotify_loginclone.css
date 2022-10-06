@@ -1,0 +1,14 @@
+img{
+    max-width: 28%;
+    max-height: 28%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block; 
+}
+
+hr{
+    margin-top: 2%;
+    width: auto;
+    size: 5;
+    color: black;
+}
