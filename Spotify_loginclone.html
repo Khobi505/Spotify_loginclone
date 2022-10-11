@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         Spotify-Login
     </title>
@@ -8,9 +9,31 @@
 <body>
     <div>
         <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Black.png">
-        <hr>
+        <hr class="hr1">
     </div>
     <div>
-        <h5></h5>
+        <h4>To continue, log into Spotify</h4>
+    </div>
+    <div class="form">
+        <div class="part1">
+            <span><input type="button" value="CONTINUE WITH FACEBOOK" id="facebook"></span>
+            <span><input type="button" value="CONTINUE WITH APPLE" id="apple"></span>
+            <span><input type="button" value="CONTINUE WITH GOOGLE" id="google"></span>
+            <span><input type="button" value="CONTINUE WITH PHONE NUMBER" id="number"></span><br><br>
+            <div class="or">
+                <hr class="hr2">
+                <span>OR</span>
+                <hr class="hr2">
+            </div>
+        </div>
+        <br>
+        <div class="part2">
+            <label for="text">Email address or username</label><br>
+            <input type="text" placeholder="Email or username">
+            <br><br>
+            <label for="password">Password</label><br>
+            <input type="password" placeholder="Password">
+            <br>
+        </div>
     </div>
 </body>

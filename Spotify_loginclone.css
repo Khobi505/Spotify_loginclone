@@ -1,14 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
 img{
-    max-width: 28%;
-    max-height: 28%;
+    max-width: 50%;
+    max-height: 50%;
     margin-right: auto;
     margin-left: auto;
     display: block; 
 }
 
-hr{
-    margin-top: 2%;
-    width: auto;
+.hr1{
+    width: 100%;
     size: 5;
     color: black;
+}
+
+.hr2{
+    width: 80%;
+    size: 5;
+    color: black;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+h4{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.part1{
+    text-align: center;
+}
+
+#facebook{
+    background-color: rgb(66, 66, 180);
+    color: white;
+    min-width: 60%;
+    border-color:rgba(255, 255, 255, 0);
+}
+
+#apple{
+    margin-top: 2%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    min-width: 60%;
+    border-color:rgba(255, 255, 255, 0);
+}
+
+#google{
+    margin-top: 2%;
+    background-color:rgb(255, 255, 255);
+    color: rgb(99, 134, 120);
+    min-width: 60%;
+    border-color:rgb(170, 170, 170); 
+}
+
+
+#number{
+    margin-top: 2%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(99, 134, 120);
+    min-width: 60%;
+    border-color: rgb(170, 170, 170); 
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+}
+ 
+input[type = "button"]{
+    border-radius: 50px;
+    height: 35px;
+}
+
+input[type="text"],[type="password"]{
+    width: 75%;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.part2{
+    text-align: justify;
+    margin-left: 20%;
+}
+
+@media only screen and (min-width: 450px) {
+img{
+    width: 15%;
+    height: 15%;        
+}
+
+.form{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
 }
