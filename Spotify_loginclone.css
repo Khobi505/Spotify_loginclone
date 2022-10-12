@@ -85,7 +85,7 @@ h4, .part4{
     margin: 0% 15% 0% 15%;
 }
  
-button{
+button, input[type="button"]{
     border-radius: 50px;
     height: 35px;
 }
