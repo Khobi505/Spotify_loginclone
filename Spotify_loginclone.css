@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
 }
 
 img{
@@ -17,17 +18,17 @@ img{
 }
 
 .hr2{
-    width: 80%;
+    width: 30%;
     size: 5;
     color: black;
-    margin-right: 100px;
-    margin-left: 50px;
 }
 
-h4{
+.hr3{
+    margin-top: 5%;
+}
+
+h4, .part4{
     text-align: center;
-    font-family: sans-serif;
-    font-size: 15px;
 }
 
 .part1{
@@ -35,7 +36,7 @@ h4{
 }
 
 #facebook{
-    background-color: rgb(66, 66, 180);
+    background-color: rgb(66, 103, 178);
     color: white;
     min-width: 60%;
     border-color:rgba(255, 255, 255, 0);
@@ -54,7 +55,7 @@ h4{
     background-color:rgb(255, 255, 255);
     color: rgb(99, 134, 120);
     min-width: 60%;
-    border-color:rgb(170, 170, 170); 
+    border:1px solid black;
 }
 
 
@@ -63,7 +64,14 @@ h4{
     background-color: rgb(255, 255, 255);
     color: rgb(99, 134, 120);
     min-width: 60%;
-    border-color: rgb(170, 170, 170); 
+    border:1px solid black;
+}
+
+.plain{
+    background-color: rgb(255, 255, 255);
+    color: rgb(99, 134, 120);
+    min-width: 60%;
+    border:1px solid black;
 }
 
 .form{
@@ -74,22 +82,47 @@ h4{
 .or{
     display: flex;
     flex-direction: row;
+    margin: 0% 15% 0% 15%;
 }
  
-input[type = "button"]{
+button{
     border-radius: 50px;
     height: 35px;
 }
 
 input[type="text"],[type="password"]{
     width: 75%;
+    border: 1px solid black;
     height: 50px;
     margin-top: 5px;
 }
 
+input[type=checkbox] {
+    accent-color:#1DB954;
+}
+
+.loginbtn{
+    background-color:#1DB954;
+    border:none;
+}
+
 .part2{
     text-align: justify;
-    margin-left: 20%;
+    margin-left: 0%;
+}
+
+.part3{
+    margin-left: 0%;
+}
+
+.section31{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 @media only screen and (min-width: 450px) {
@@ -102,5 +135,36 @@ img{
     margin-left: 25%;
     margin-right: 25%;
     width: 50%;
+}
+
+.part2{
+    text-align: justify;
+    margin-left: 19%;
+}
+
+.part3{
+    margin-left: 20%;
+}
+.section311{
+    margin-right: 45%;
+}
+
+.section311{
+    display: inline-block;
+    margin-right: 20%;
+    font-size: smaller;
+}
+
+.section31{
+    display: flex;
+    flex-direction: row;
+}
+
+.hr3{
+    margin: 5% 20% 0% 0%;
+}
+
+.loginbtn{
+    width:25%
 }
 }

@@ -16,10 +16,13 @@
     </div>
     <div class="form">
         <div class="part1">
-            <span><input type="button" value="CONTINUE WITH FACEBOOK" id="facebook"></span>
-            <span><input type="button" value="CONTINUE WITH APPLE" id="apple"></span>
-            <span><input type="button" value="CONTINUE WITH GOOGLE" id="google"></span>
-            <span><input type="button" value="CONTINUE WITH PHONE NUMBER" id="number"></span><br><br>
+            <span>
+                <input type="button" value="CONTINUE WITH FACEBOOK" id="facebook"></span>
+            <button type="button" id="apple">CONTINUE WITH APPLE</button>
+            <span>
+                <input type="button" value="CONTINUE WITH GOOGLE" id="google"></span>
+            <span>
+                <input type="button" value="CONTINUE WITH PHONE NUMBER" id="number"></span><br><br>
             <div class="or">
                 <hr class="hr2">
                 <span>OR</span>
@@ -33,7 +36,25 @@
             <br><br>
             <label for="password">Password</label><br>
             <input type="password" placeholder="Password">
-            <br>
+            <br><br>
+        </div>
+        <div class="part3">
+            <a href="#">Forgot your password?</a><br><br>
+            <div class="section31">
+                <div class="section311">
+                <input type="checkbox" value="remember">
+                <label for="remember">Remember me</label><br>
+                </div>
+                <input type="button" value="LOG IN" class="loginbtn">
+            </div>
+            <hr class="hr3">
+        </div>
+        <div class="part4">
+            <h5><b>Don't have an account?</b></h5>
+            <input type="button" value="SIGN UP FOR SPOTIFY" class="plain">
         </div>
     </div>
 </body>
+
+<!-- <img src="data:image/png;base64,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"> -->
+<!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-zwnqm&psig=AOvVaw1pEFxa5KDul8y5oggLwKqS&ust=1665657806113000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCNju34_B2voCFQAAAAAdAAAAABB0 -->
